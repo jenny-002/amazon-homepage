@@ -1,0 +1,93 @@
+/* ================================================================
+   Student ID  : 25531270
+   Name        : WANG JIEYI
+   Date        : 2026-10-04
+   Assignment  : Amazon Homepage Replica (Pure HTML + CSS)
+================================================================ */
+
+
+/* ========== 1. Universal Reset: clear default margins and padding ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeded;
+}
+
+
+/* ========== 2. Top navigation bar ========== */
+.top-nav {
+    background-color: #131921;
+    height: 60px;
+}
+
+.top-nav-inner {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+/* Logo */
+.logo {
+    float: left;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Deliver to */
+.deliver-to {
+    float: left;
+    color: #ffffff;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+/* Search box */
+.search-box {
+    float: left;
+    margin-top: 12px;
+}
+
+.search-box input {
+    width: 400px;
+    height: 36px;
+    padding: 0 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.search-box button {
+    width: 50px;
+    height: 36px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Nav links on the right */
+.nav-links {
+    float: right;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Clear float after the top nav */
+.top-nav-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
