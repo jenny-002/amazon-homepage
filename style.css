@@ -1,12 +1,11 @@
 /* ================================================================
    Student ID  : 25531270
    Name        : WANG JIEYI
-   Date        : 2026-10-04
+   Date        : 03/10/2026
    Assignment  : Amazon Homepage Replica (Pure HTML + CSS)
 ================================================================ */
 
-
-/* ========== 1. Universal Reset: clear default margins and padding ========== */
+/* ========== 1. Universal Reset ========== */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     background-color: #eaeded;
 }
 
-
 /* ========== 2. Top navigation bar ========== */
 .top-nav {
     background-color: #131921;
@@ -26,14 +24,24 @@ body {
 }
 
 .top-nav-inner {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
     height: 60px;
     line-height: 60px;
 }
 
-/* Logo */
+.top-nav-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.top-nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .logo {
     float: left;
     color: #ffffff;
@@ -42,7 +50,6 @@ body {
     margin-right: 20px;
 }
 
-/* Deliver to */
 .deliver-to {
     float: left;
     color: #ffffff;
@@ -50,7 +57,6 @@ body {
     margin-right: 20px;
 }
 
-/* Search box */
 .search-box {
     float: left;
     margin-top: 12px;
@@ -73,7 +79,6 @@ body {
     font-size: 14px;
 }
 
-/* Nav links on the right */
 .nav-links {
     float: right;
 }
@@ -85,9 +90,150 @@ body {
     font-size: 14px;
 }
 
-/* Clear float after the top nav */
-.top-nav-inner::after {
+/* ========== 3. Secondary navigation bar ========== */
+.sub-nav {
+    background-color: #232f3e;
+    height: 40px;
+    padding-left: 20px;
+    line-height: 40px;
+    clear: both;
+    text-align: left;
+}
+
+.sub-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 25px;
+    line-height: 40px;
+    float: left;
+}
+.sub-nav::after {
     content: "";
     display: block;
     clear: both;
+}
+
+/* ========== 4. Hero banner ========== */
+.hero-section {
+    width: 100%;
+    padding: 20px;
+}
+
+.hero-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hero-card {
+    float: left;
+    width: 23%;
+    margin-right: 2.63%;
+    background-color: #ffffff;
+    padding: 15px;
+    height: 380px;
+}
+
+.hero-card:last-child {
+    margin-right: 0;
+}
+
+.hero-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.hero-card h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #111;
+}
+
+/* ========== 5. Product category section ========== */
+.category-section {
+    width: 100%;
+    padding: 20px;
+}
+
+.category-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.category-card {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    background-color: #ffffff;
+    padding: 15px;
+    height: 300px;
+}
+
+.category-card:last-child {
+    margin-right: 0;
+}
+
+.category-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.category-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ========== 6. Footer ========== */
+.footer {
+    background-color: #232f3e;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.footer-inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-col {
+    float: left;
+    width: 33.33%;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #3a4553;
 }
