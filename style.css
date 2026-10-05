@@ -97,17 +97,17 @@ body {
     padding-left: 20px;
     line-height: 40px;
     clear: both;
-    text-align: left;
 }
 
 .sub-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 12px;
-    margin-right: 25px;
-    line-height: 40px;
-    float: left;
+    color: #ffffff;/* white text */
+    text-decoration: none;/* remove underline */
+    font-size: 12px;/* small font */
+    margin-right: 25px;/* spacing between links */
+    line-height: 40px;/* vertically center text */
+    float: left;/* horizontal arrangement */
 }
+
 .sub-nav::after {
     content: "";
     display: block;
@@ -126,12 +126,15 @@ body {
     clear: both;
 }
 
+/* Hero cards: 4 cards per row.
+   Each card = 23% width + 2.63% margin-right.
+   Total = 23% x 4 + 2.63% x 3 = 92% + 7.89% ≈ 99.89%, fits in one row. */
 .hero-card {
-    float: left;
-    width: 23%;
-    margin-right: 2.63%;
+    float: left;/* horizontal arrangement */
+    width: 23%;/* 4 cards per row */
+    margin-right: 2.63%;/* gap between cards */
     background-color: #ffffff;
-    padding: 15px;
+    padding: 15px;/* inner spacing */
     height: 380px;
 }
 
@@ -151,7 +154,14 @@ body {
     color: #111;
 }
 
+.hero-card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
 /* ========== 5. Product category section ========== */
+/* 3 cards in a row using float, each card 32% wide */
 .category-section {
     width: 100%;
     padding: 20px;
@@ -163,6 +173,9 @@ body {
     clear: both;
 }
 
+/* Category cards: 3 cards per row.
+   Each card = 32% width + 2% margin-right.
+   Total = 32% x 3 + 2% x 2 = 96% + 4% = 100%, fits in one row. */
 .category-card {
     float: left;
     width: 32%;
@@ -189,6 +202,7 @@ body {
 }
 
 /* ========== 6. Footer ========== */
+/* Dark background, 3 columns using float */
 .footer {
     background-color: #232f3e;
     color: #ffffff;
@@ -207,6 +221,8 @@ body {
     clear: both;
 }
 
+/* Footer columns: 3 columns per row.
+   100% / 3 = 33.33% per column. */
 .footer-col {
     float: left;
     width: 33.33%;
